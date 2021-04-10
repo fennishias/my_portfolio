@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>my portfolio</title>
+     <link href="po.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+     <div id="nv">
+         <nav>
+             <h1 style="color:white">Hire Me</h1>
+             <ul>
+                 <li><a href="#home">HOME</a></li>
+                 <li><a href="#portfolio">PORTFOLIO</a></li>
+                 <li><a href=#resume>RESUME</a></li>
+                 <li><a href="#about">ABOUT</a></li>
+                 <li><a href="#services">SERVICES</a></li>
+                 <li><a href="#contact">CONTACT</a></li>
+                  
+             </ul>
+         </nav>
+         <section id="container">
+             <div id="home"></div>
+             <div id="top"></div>
+             <img src="fenny.png"style="align:center" ></img>
+             <h1 style="text-align:center">HI THERE I'M</h1></br>
+                 <h1 style="text-align: center;font-size: 30px;">Fenny Ongala</h1></br>
+                 <h3 id="txt"style="text-align:center;"></h3>
+                 </section>
+         <main id="content">
+             <section id ="home">
+                 <h2 style="text-align:center;">PROJECT</h2>
+                 <br>
+                 <p>Having a website and online presence strategy allows you to market your business online .I design web in accordance to guidelines
+                     I use variety of languages like HTML CSS and Javascript
+                 </p>
+                <p>Below are some of my projects</p>
+                </section>
+             <section id="resume"class="resume">
+                 <div class="container">
+                     <h2 style="text-align:center;">MY SKILLS</h2>
+                     <br>
+                    <p style="font-size: 20px;">I am a young kenyan 22 years always devoted for a better client experience . I'm still in college doing my IT studies.</p>
+                     <h3>My Skills</h3>
+                     <br>
+                         <ul>
+                             <li>HTML<br/> <progress min="0" max="100" value="80"></progress></li>
+                             <li>JAVASCRIPT<br/><progress min="0" max="100" value="60"></progress></li>
+                             <li>PYTHON<br/><progress min="0" max="100" value="50"></progress></li>
+                             <li>PHP<br/><progress min="0" max="100" value="90"></progress></li>
+                             <li>CSS<br/><progress min="0" max="100" value="50"></progress></li>
+                             <li>MACHINE LEARNING<br/><progress min="0" max="100" value="40"></progress></li>
+                         </ul>
+                 </div>
+                </section>
+
+             <!-- section two about the navigation -->
+             <hr>
+             <section id="about" class="about" style="font-family: 'Times New Roman';">
+                 <h2 style="text-align:center;">ABOUT ME</h2>
+                 <br>
+                 <p>Hi my name is fenny ongala and i work remotely as a freelance frontend developer and data scientist\analyst .I hold a Diploma in information technology</p>
+                 <p>Since i was young ,I have always enjoyed to solve puzzles .So thats how I look at big data sets to me its one big puzzle i want to solve .</p>
+                 <p>Do you want to work  together?Please reach me out by my email.
+                 </p>
+                </section>
+
+             <!-- services section -->
+
+             <section id="services "style="text-align:center;">
+                 <h2>SERVICES</h2>
+                 <p>As a freelancer frontend developer and data scientist . I translate data into valuable and comprehensible insights i also make website responsive .My goal is to improve results ,make righ decisions and save cost</p>
+                 
+             </section>
+
+             <!-- section another -->
+                <hr>
+             <section id="contact" class="contact" style="text-align:center;">
+                 <h2>CONTACT ME</h2>
+                 <br>
+                 <svg class="face" height="100" width="100">
+                     <circle cx="50"cy="50"r="50" fill="#FDD835"></circle>
+                     <circle cx="30"cy="30"r="10" fill="#FFFFFF"></circle>
+                     <circle cx="70"cy="30"r="10"fill="#FFFFFF"></circle>
+                     <circle cx="30"cy="30"r="5"fill="#000000"></circle>
+                     <path d="M 30 70q 20 20 40 0"stroke-width="#FFFFFF" fill="none"></path>
+                 </svg>
+                 <form>
+                     <input name="name"placeholder="name" type="text"><br/>
+                     <input name="email "placeholder="email" type="text"><br/>
+                     <div style="background-color:aqua"><textarea name="message" placeholder="message" required></textarea></div>
+                     <input type="submit" value="send"class="submit">
+                     
+                 </form>
+                 <hr>
+                </section>
+
+             <!-- section for my details -->
+
+             <section>
+                 <ul style="text-align:center;">
+                     <li >Email:fennyongala08@gmail.com</li>
+                     <li>contact:0712 180 199</li>
+                     <li>Github:@fennishias</li>
+                     <li> facebook:fenny ongala</li>
+                 </ul>
+             </section>
+         </main>
+     </div>
+     <script>
+         var str=document.querySelector("#txt");
+         var txt="AM A FREELANCE FRONTEND DEVELOPER AND A DATA SCIENTIEST";
+         var txtlen=txt.length;
+         var pos=-1;
+         var t=setInterval(move,200);
+         function move(){
+             pos++;
+             str.innerHTML+=txt.charAt(pos);
+
+         }
+     </script>
+
+ </body>
+ </html>
